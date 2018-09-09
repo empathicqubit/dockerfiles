@@ -1,7 +1,5 @@
 FROM base/archlinux:2018.08.01
 
-COPY ./packages /workdir/packages
-
 WORKDIR /workdir
 
 RUN pacman --noconfirm -Sy mate-icon-theme python-pip python2-pip ttf-fira-code ttf-fira-mono ttf-inconsolata xorg yarn git base-devel curl
